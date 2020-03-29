@@ -3,7 +3,6 @@
 // Model: contains data and logic to create, change, delete todos 
 // and to toggle whether todo is completed
 
-const computerScore = 0; 
 var todoList = 
 {
     todos: [], 
@@ -70,9 +69,9 @@ var handlers = {
     },
 
     deleteTodo: function(position) {
-        todoList.deleteTodo(); 
+        todoList.deleteTodo();
         view.displayTodos();
-    }, 
+    },
 
     toggleCompleted: function() {
         var toggleCompletedPositionInput = document.getElementById('toggleCompletedPositionInput');
@@ -103,7 +102,7 @@ var view = {
             } else {
                 todoTextWithCompletion = '[ ] ' + todo.todoText; 
             }
-
+            
             todoLi.id = position; 
             todoLi.textContent = todoTextWithCompletion;
             todoLi.appendChild(this.createDeleteButton()); 
