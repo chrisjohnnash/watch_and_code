@@ -8,6 +8,7 @@ var todoList =
     todos: [], 
 
     addTodo: function(todoText) {
+        debugger;
         this.todos.push({
             todoText: todoText,
             completed: false
@@ -50,7 +51,7 @@ var todoList =
     }
 };
 
-// Controller: Communicates with the todos in Model when with the View to represent when todos change  
+// Controller: Communicates with the todos in Model then with the View to represent when todos change  
 var handlers = {
     addTodo: function() {
         var addTodoTextInput = document.getElementById('addTodoTextInput'); 
